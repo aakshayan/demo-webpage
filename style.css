@@ -11,8 +11,8 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-around;
-position: fixed;
-    height: 50px;
+    position: fixed;
+    height: 80px;
     z-index: 2;
  
 }
@@ -22,7 +22,7 @@ display: flex;
 align-items: center;
 gap: 20px;
 padding: 20px;
-padding-right: 100px;
+padding-right: 300px;
 } 
 
 header .logo img{
@@ -39,7 +39,7 @@ header.logo h2{
 header .head-menu ul{
     list-style-type: none;
     display: flex;
-    padding: 30px;
+    padding: 80px;
 }
 
 header .head-menu a{
@@ -51,10 +51,11 @@ header .head-menu a{
 
 header .head-menu .buy-menu{
     background-color: pink;
-    border-radius: 4px;
+    border-radius: 5px;
     color: white;
-    padding: 30px;
-    margin: 20px;
+    padding: 35px;
+    margin: 50px;
+    height: 30px;
     text-align: center;
 }
 
@@ -62,15 +63,23 @@ header .head-menu .buy-menu:hover{
     background-color: #ec7499;
     transition: 0.8s ease-in-out;
 }
+ 
+header .head-menu .show-mean{
+    position: absolute;
+    top: 145px;
+    left: 540px;
+
+}
 
 
 header .head-menu .main-menu .sub-mean{
     display: none;
     color: #000;
     position: absolute;
-    top:80px;
-    left:280px;
-    width: 140px; 
+    top:-20px;
+    right: -60px;
+    /* width: 190px;  */
+    z-index: 1;
 }
 
 header .head-menu ul{
@@ -80,10 +89,11 @@ header .head-menu ul{
 header .head-menu ul .sub-mean li{
      background-color: #763dde;
      padding: 15px;
+     z-index: 2;
 }
 
 header .head-menu .main-menu .show-mean:hover .sub-mean{
-    z-index: 1;
+    z-index: 2;
     display: block;
    
 }
@@ -893,95 +903,6 @@ position: relative;
 
 
 @media (min-width:320px ) and (max-width:470px ){
-
-header .head-menu ul{
-    display:none;
-    position: absolute;
-    background-color: #000;
-    height: 200px;
-    left: 0px;
-    width: 320px;
-    text-align: center;
-    top: 50px;
-}
-
-
-.buy-menu{
-    position: absolute;
-    top: 130px;
-    text-align: center;
-    right: 80px;
-}
- .mobile-toggal i{
-    display: block;
-    padding: 0px 0px 50px 0px;
-    font-size: 25px;
-    position: absolute;
-    top: 10px;
-    right: 30px;
- }
-
-
- .home-page{
-    /* background-image: url(images/BACKGROUND\ 1);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover; */
-    /* text-align: center; */
-    width: inherit;
-    padding: 40px;
-    height: 420px;
-    
- }
-.home-page .home-contant{
-    padding: 0px;
-    font-size: 5px;
-    /* text-align: center; */
-  
-}
-
-.home-page .home-contant h1{
-   padding: 0px;
-
-
-   /* padding-right: 45px; */
-    font-size: 25px;
-    width: inherit;
-    /* text-align: center; */
-    font-weight: 900;
-    
-}
-
-.home-page .home-contant p{
-    padding: 0px 0px 0px 0px ;
-    margin: 10px;
-    /* text-align: center; */
-    font-weight: 900;
-    font-size: 14px;
-    width: inherit;
-}
-
-.home-page .home-bty{
-    padding: 10px;
-}
- 
-.home-page .home-bty button{
-    padding: 10px 10px;
-    margin: 10px;
-    background-color: #30d5a5;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.2);
-    font-weight: 800;
-    font-size: 17px;
-}
-
-
- .home-page .home-layer{
-    width: 320px;
-    height: 420px;
- }
 
 
 }
